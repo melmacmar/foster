@@ -9,3 +9,8 @@ end
 class User < ActiveRecord::Base
   mount_uploader :image, ImageUploader
 end
+class AddImageToUsers < ActiveRecord::Migration
+  def change
+    add_column :courses, :image, :string
+  end
+end
