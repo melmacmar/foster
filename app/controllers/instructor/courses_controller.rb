@@ -18,6 +18,11 @@ end
 def show
 end
 
+
+def course_params
+  params.require(:course).permit(:title, :description, :cost, :image)
+end
+
   private
   def require_authorized_for_current_course
     if current_course.user != current_user
@@ -30,8 +35,4 @@ end
     @current_course ||= Course.find(params[:id])
   end
 
-
-def course_params
-  params.require(:course).permit(:title, :description, :cost, :image)
-end
 end
