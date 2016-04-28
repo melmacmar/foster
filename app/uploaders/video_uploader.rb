@@ -1,23 +1,17 @@
-# encoding: utf-8
+## encoding: utf-8
 
-class ImageUploader < CarrierWave::Uploader::Base
+class VideoUploader < CarrierWave::Uploader::Base
 
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick
-  include CarrierWave::MiniMagick
+  # include CarrierWave::MiniMagick
 
   # Choose what kind of storage to use for this uploader:
   #storage :file
   storage :aws
 
-  # A bunch more comments down here....
-
-  #storage :fog
-
-
-  # Override the directory where uploaded files will be stored.
-  # This is a sensible default for uploaders that are meant to be mounted:
-  
+  # A bunch more comments
+end
 
   # Provide a default URL as a default if there hasn't been a file uploaded:
   # def default_url
