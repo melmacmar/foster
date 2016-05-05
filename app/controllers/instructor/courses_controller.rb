@@ -20,7 +20,7 @@ end
 
 
 def course_params
-  params.require(:course).permit(:title, :description, :cost, :image)
+  params.require(:course).permit(:title, :description, :cost, :image, :video)
 end
 
   private
