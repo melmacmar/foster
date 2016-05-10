@@ -16,7 +16,7 @@
     <% end %>
 
     <br />
-
+    <br />
 
     <% if current_user && current_user.enrolled_in?(@course) %>
       <h3 class="label label-info">You Are Enrolled!</h3>
@@ -37,7 +37,6 @@
     <%= @course.description %>
   </div>
 
-<% section.sections.rank(:row_order).each do |sections| %>
   <div class="col-xs-12">
     <% @course.sections.each do |section| %>
     <br /><br />
@@ -62,3 +61,5 @@
     <% end %>
   </div>
 </div>
+
+ 
