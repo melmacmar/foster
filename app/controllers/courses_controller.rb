@@ -19,8 +19,12 @@ class CoursesController < ApplicationController
    def show
     @section = Section.new
     @lesson = Lesson.new
+    @course = Course.find(params[:id])
   end
 
+def index
+  @courses = Course.all
+end
 
   private
   def require_authorized_for_current_course
